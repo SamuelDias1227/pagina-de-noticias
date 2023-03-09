@@ -1,0 +1,131 @@
+/*conteiner pai do grid*/
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 180px;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: solid black;*/
+}
+
+/*grid header*/
+.header{
+    grid-area: header;
+    /*border: solid red;*/
+}
+/*grid header*/
+
+/*grid main*/
+.main{
+    grid-area: main;
+}
+/*grid main*/
+
+/*grid footer*/
+.footer{
+    grid-area: footer;
+    /*border: solid red;*/
+}
+/*grid footer*/
+
+.main {
+    display: grid;
+    grid-template-columns: 360px 360px 360px 360px;
+    grid-template-areas: "noticias noticias noticias noticias" "item item item item";
+    width: 1420px;
+    /*border: solid red;*/
+}
+
+.noticias{
+    grid-area: noticias;
+    margin-right: 20px;
+    /*border: solid blue;*/
+    text-align: center;
+}
+
+/*grid das colunas*/
+.item {
+    margin-right: 20px;
+    /*border: solid blue;*/
+}
+
+.item:last-child {
+    margin-right: 20px;
+}
+/*grid das colunas*/
+
+/*cabeçalho*/
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.imglogo {
+    width: 100px;
+    height: 100px;
+}
+
+.textlogo{
+    margin-left: 10px;
+    width: 300px;
+}
+
+nav ul {
+    margin-left: 10px;
+}
+
+nav li {
+    margin-right: 60px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+/*cabeçalho*/
+
+/*main*/
+.img {
+    width: 334px;
+    height: 250px;
+}
+.news-section {
+    width: calc(334px - 50px);
+    /*width: 334px;*/
+    margin-left: 20px;
+    text-align: left;
+    word-wrap:break-word;
+}
+/*main*/
+
+/*rodapé*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/*rodapé*/
